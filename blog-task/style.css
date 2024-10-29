@@ -1,0 +1,16 @@
+#blog article {
+    color: #000;
+    margin:  0 5px;
+    font-size: 3rem;
+    min-height: 500px;
+    text-align: center;
+    display: inline-block;
+    width: calc(100% / 3 - 15px);
+    background-color: #00ffff;
+}
+
+section {
+    padding: 8px 10px;
+    text-align: center;
+    background-color: #990866;
+}
