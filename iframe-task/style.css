@@ -1,0 +1,39 @@
+body {
+    background-color: #f3f3f9;
+}
+
+section {
+    width: 550px;
+    margin: 50px auto;
+    aspect-ratio: 2/1;
+    text-align: start;
+    border-radius: 8px;
+    padding: 15px 0px;
+    background-color: #fff;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+}
+
+p {
+    color: #66666ea4;
+}
+
+.special {
+    color: #f672a7;
+    font-size: .8rem;
+}
+
+.content,
+h3 {
+    padding: 0px 20px;
+}
+
+h3{
+    margin: 0px;
+}
