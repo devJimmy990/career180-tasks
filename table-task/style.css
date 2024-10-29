@@ -1,0 +1,82 @@
+body {
+    padding: 24px 12px;
+    background-color: #f5f5f5;
+}
+
+section {
+    margin: 0 auto;
+    padding: 15px 0px;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #fff;
+    width: calc(100%/2 - 30px);
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 16px;
+
+}
+
+#striped-table tbody tr:nth-child(odd) {
+    background-color: #e9e8e870
+}
+
+p {
+    color: #878a99;
+}
+
+.action {
+    text-decoration: underline .5px #fff dashed;
+    color: #31a79b;
+}
+
+.special {
+    color: #f672a7;
+    font-size: .8rem;
+}
+
+.content,
+h3 {
+    padding: 0px 20px;
+}
+
+.default-table-id {
+    color: #405189;
+    font-weight: 600;
+}
+
+.confirmed,
+.waiting,
+.cancelled {
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1.5px 10px;
+    display: inline-block;
+}
+
+.confirmed {
+    background-color: #0ab39c;
+}
+
+.waiting {
+    background-color: #f7b84b;
+}
+
+.cancelled {
+    background-color: #f06548;
+}
