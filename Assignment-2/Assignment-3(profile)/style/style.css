@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap");
+
+:root {
+    --white-color: #fff;
+    --black-color: #292929;
+    --card-color: #fafafa;
+    --variant-color: #5271FF;
+
+    --fontFamily: "Jost", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    color: var(--black-color);
+    font-family: var(--fontFamily);
+}
+
+/** Aside && Navbar */
+aside {
+    background-color: var(--card-color);
+}
+
+.nav>li {
+    gap: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+a:hover {
+    color: var(--variant-color);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav>li>a:hover {
+    color: var(--card-color);
+    background-color: var(--variant-color);
+}
+
+/** Main */
+#view-portfolio,
+#view-resume {
+    color: var(--white-color);
+    padding: 14px;
+}
+
+.rotating-container {
+    /* Adjust as needed to fit around the image */
+    background-color: var(--variant-color);
+    animation: rotateBackground 6s infinite linear;
+    z-index: 0;
+}
+
+#view-resume {
+    background-color: var(--black-color);
+}
+
+#view-portfolio {
+    background-color: var(--variant-color);
+}
+
+.special {
+    color: var(--variant-color);
+}
+
+.vertical-divider {
+    border-left: 2px solid #e0e0e0;
+    height: 30px;
+    margin: 0 1px;
+}
+
+#services-pricing {
+    background-color: var(--variant-color);
+    color: var(--white-color);
+    padding: 12px 25px;
+}
+
+.line-before::before {
+    border-left: 2px solid var(--variant-color);
+    content: "";
+    height: 100%;
+    padding: 0 3px;
+}
+
+.technology-card {
+    background-color: var(--card-color);
+    border: .5px solid #e0e0e0;
+}
+
+.work-together {
+    background-image: url(../assets/images/bg.png);
+    background-size: cover;
+    color: var(--white-color);
+    padding: 30px 25px;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+}
+
+
+@keyframes rotateBackground {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
