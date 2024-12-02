@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../js/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid row">
+        <aside
+            class="sidebar container col-12 col-lg-2 d-flex flex-lg-column justify-content-between justify-content-lg-start align-items-center">
+            <div class="profile d-flex flex-column justify-content-center align-items-center">
+                <img src="../assets/images/profile.png" profile-img">
+                <div class="d-none d-md-block flex-column justify-content-center align-items-center">
+                    <h5>Mo-Gamal</h5>
+                    <p class="d-none d-lg-block">Software Developer</p>
+                </div>
+            </div>
+            <div
+                class="contact h-auto col-9 col-lg-12 d-flex flex-column justify-content-around align-items-end align-items-lg-center">
+                <div class="social  d-none d-md-flex justify-content-between gap-3 gap-lg-2">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/devJimmy990" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mogamaal/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <hr class="d-none d-lg-block">
+                <nav class="col-12">
+                    <ul class="nav d-none d-md-flex flex-lg-column justify-content-center gap-3">
+                        <li>
+                            <a href="" class="d-flex flex-wrap align-items-center gap-2 border-0 rounded-2 px-2 py-1">
+                                <i class="d-none d-lg-block fas fa-user"></i>
+                                <span> About Me</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="d-flex align-items-center gap-2 border-0 rounded-2 px-2 py-1">
+                                <i class="d-none d-lg-block fas fa-laptop-code"></i>
+                                <span> Portfolio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center gap-2 border-0 rounded-2 px-2 py-1">
+                                <i class="d-none d-lg-block fas fa-briefcase"></i>
+                                <span> Services & Pricing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center gap-2 border-0 rounded-2 px-2 py-1">
+                                <i class="d-none d-lg-block fas fa-file-alt"></i>
+                                <span> Resume</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center gap-2 border-0 rounded-2 px-2 py-1">
+                                <i class="d-none d-lg-block fas fa-box-open"></i>
+                                <span> Products</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center gap-2 border-0 rounded-2 px-2 py-1">
+                                <i class="d-none d-lg-block fas fa-newspaper"></i>
+                                <span> Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex align-items-center gap-2 border-0 rounded-2 px-2 py-1">
+                                <i class="d-none d-lg-block fas fa-envelope"></i>
+                                <span> Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </aside>
+        <main class="main container col-12 col-lg-10 d-flex flex-column gap-3 my-3 px-lg-3">
+            <section class="about-me d-flex flex-column flex-md-row justify-content-between">
+                <div class="d-flex flex-column justify-content-center gap-3">
+                    <span>
+                        HI, I`M A FREELANCER
+                        <h1 id="wordAnimation" class="special fst-italic fw-bold"> D</h1>
+                    </span>
+
+                    <span>
+                        I'm a software engineer specializing in scalable web apps.
+                        <p>Explore my
+                            <span class="special">blog, project portfolio</span>
+                            and
+                            <span class="special"> online resume</span>.
+                        </p>
+                    </span>
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-4">
+                        <button id="view-portfolio" class="d-flex align-items-center gap-2 border-0 rounded-5">
+                            <i class="fas fa-arrow-right"></i> <span>View Portfolio</span>
+                        </button>
+                        <button id="view-resume" class="d-flex align-items-center gap-2 border-0 rounded-5">
+                            <img src="../assets/icons/resume-icon.png" alt="view-resume">
+                            <span>View Resume</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <div class="d-none d-md-block position-relative">
+                        <div class="rotating-container h-100 w-100 position-absolute"></div>
+                        <img src="../assets/images/user.jpg" alt="developer"
+                            class="static-image img-fluid position-relative" height="200">
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 col-lg-6 d-flex justify-content-between gap-3">
+                <div
+                    class="col-4 col-lg-3 d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                    <p class="special fs-1 fw-bold mb-0">5</p>
+                    <div class="d-none d-md-block vertical-divider"></div>
+                    <p class="mb-0">Years of Experience</p>
+                </div>
+                <div
+                    class="col-4 col-lg-3 d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                    <p class="special fs-1 fw-bold mb-0">110</p>
+                    <div class="d-none d-md-block vertical-divider"></div>
+                    <p class="mb-0">Projects Completed</p>
+                </div>
+                <div
+                    class="col-4 col-lg-3 d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                    <p class="special fs-1 fw-bold mb-0">6K</p>
+                    <div class="d-none d-md-block vertical-divider"></div>
+                    <p class="m-0 p-0">Clients Worldwide</p>
+                </div>
+            </section>
+
+
+
+            <section class="d-flex flex-column ">
+                <h4 class="line-before">What I do</h4>
+                <div class="d-flex flex-column-reverse flex-md-row justify-content-between gap-3">
+                    <p class="col-12 col-lg-7">
+                        I have more than IO years' experience building software for clients all over the world- Below is
+                        a
+                        quick overview of my main technical skill sets and technologies I use. Want to find out more
+                        about my experience? Check out my <span class="special">online resume</span> and <span
+                            class="special"> project portfolio</span>.
+                    </p>
+                    <div class="col-12 col-md-3 d-flex align-items-end justify-content-end">
+                        <button id="services-pricing" class="d-flex align-items-center gap-2 border-0 rounded-5">
+                            <i class="fas fa-arrow-right"></i> <span>Services & Pricing</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="d-flex flex-wrap">
+                <div class="technology-card col-12 col-md-4 col-lg-3 d-flex flex-column gap-2 p-4">
+                    <div class="d-flex flex-wrap gap-4">
+                        <img src="../assets/icons/js.png" alt="js">
+                    </div>
+                    <h6 class="fw-semibold">Vanilla JavaScript</h6>
+                    <p>List skills and technologies
+                        here. Customize as needed.
+                        Built on HTML5, Sass, and
+                        Bootstrap 5,</p>
+                </div>
+                <div class="technology-card col-12 col-md-4 col-lg-3 d-flex flex-column gap-2 p-4">
+                    <div class="d-flex flex-wrap gap-4">
+                        <img src="../assets/icons/angular.png" alt="angular">
+                        <img src="../assets/icons/react.png" alt="react">
+                        <img src="../assets/icons/vue.png" alt="vue">
+                    </div>
+                    <h6 class="fw-semibold">Angular, React & Vue</h6>
+                    <p>List skills and technologies
+                        here. Customize as needed.
+                        Built on HTML5, Sass, and
+                        Bootstrap 5,</p>
+                </div>
+                <div class="technology-card col-12 col-md-4 col-lg-3 d-flex flex-column gap-2 p-4">
+                    <div class="d-flex flex-wrap gap-4">
+                        <img src="../assets/icons/node.png" alt="node.js">
+                    </div>
+                    <h6 class="fw-semibold">Node.js</h6>
+                    <p>List skills and technologies
+                        here. Customize as needed.
+                        Built on HTML5, Sass, and
+                        Bootstrap 5,</p>
+                </div>
+                <div class="technology-card col-12 col-md-4 col-lg-3 d-flex flex-column gap-2 p-4">
+                    <div class="d-flex flex-wrap gap-4">
+                        <img src="../assets/icons/python.png" alt="python">
+                    </div>
+                    <h6 class="fw-semibold">Python & Django</h6>
+                    <p>List skills and technologies
+                        here. Customize as needed.
+                        Built on HTML5, Sass, and
+                        Bootstrap 5,</p>
+                </div>
+
+                <div class="technology-card col-12 col-md-4 col-lg-3 d-flex flex-column gap-2 p-4">
+                    <div class="d-flex flex-wrap gap-4">
+                        <img src="../assets/icons/php.png" alt="php">
+                    </div>
+                    <h6 class="fw-semibold">PHP</h6>
+                    <p>List skills and technologies
+                        here. Customize as needed.
+                        Built on HTML5, Sass, and
+                        Bootstrap 5,</p>
+                </div>
+                <div class="technology-card col-12 col-md-4 col-lg-3 d-flex flex-column gap-2 p-4">
+                    <div class="d-flex flex-wrap gap-4">
+                        <img src="../assets/icons/npm.png" alt="npm">
+                        <img src="../assets/icons/gulp.png" alt="gulp">
+                        <img src="../assets/icons/grunt.png" alt="grunt">
+                    </div>
+                    <h6 class="fw-semibold">npm, Gulp & Grunt</h6>
+                    <p>List skills and technologies
+                        here. Customize as needed.
+                        Built on HTML5, Sass, and
+                        Bootstrap 5,</p>
+                </div>
+                <div class="technology-card col-12 col-md-4 col-lg-3 d-flex flex-column gap-2 p-4">
+                    <div class="d-flex flex-wrap gap-4">
+                        <img src="../assets/icons/html.png" alt="html">
+                        <img src="../assets/icons/css.png" alt="css">
+                    </div>
+                    <h6 class="fw-semibold">HTML & CSS</h6>
+                    <p>List skills and technologies
+                        here. Customize as needed.
+                        Built on HTML5, Sass, and
+                        Bootstrap 5,</p>
+                </div>
+                <div class="technology-card col-12 col-md-4 col-lg-3 d-flex flex-column gap-2 p-4">
+                    <div class="d-flex flex-wrap gap-4">
+                        <img src="../assets/icons/sass.png" alt="sass">
+                        <img src="../assets/icons/less.png" alt="less">
+                    </div>
+                    <h6 class="fw-semibold">SASS & LESS</h6>
+                    <p>List skills and technologies
+                        here. Customize as needed.
+                        Built on HTML5, Sass, and
+                        Bootstrap 5,</p>
+                </div>
+            </section>
+
+
+
+
+            <section class="work-together d-flex flex-wrap justify-content-between align-content-center">
+                <div class="col-12 col-md-7 d-flex flex-column gap-1">
+                    <p class="fs-1 m-0 p-0">Let`s Work together on
+                        <span class="d-md-none">your next Project</span>
+                    <p class="d-none d-md-blockfs-1 m-0 p-0">your next Project</p>
+                    </p>
+                    <p>I am available for freelance projects. Hire me and get your project done.</p>
+                </div>
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-end">
+                    <button id="services-pricing" class="d-flex align-items-center gap-2 border-0 rounded-5">
+                        <i class="fas fa-arrow-right"></i> <span>Services & Pricing</span>
+                    </button>
+                </div>
+            </section>
+
+
+
+            <section class="d-flex flex-column ">
+                <h4 class="line-before">Featured Projects</h4>
+                <div class="d-flex flex-column-reverse flex-md-row justify-content-between gap-3">
+                    <p class="col-12 col-md-7">
+                        My step-by-step guide ensures a smooth project journey, from the initial consultation to the
+                        final
+                        delivery. I take care of every detail, allowing you to focus on what you do best.
+                    </p>
+                    <div class="col-12 col-md-3 d-flex align-items-end justify-content-end">
+                        <button id="services-pricing" class="d-flex align-items-center gap-2 border-0 rounded-5">
+                            <i class="fas fa-arrow-right"></i> <span>View Portfolio</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="d-flex flex-wrap gap-4 justify-content-evenly">
+                <div class="col-12 col-lg-5 d-flex flex-column gap-3">
+                    <img src="../assets/images/projects/project1.png" alt="js" class="w-100 h-75">
+                    <div class="col-12 d-flex justify-content-between align-items-center px-4">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex flex-wrap gap-2">
+                                <div class="border border-1 rounded-4 py-1 px-4">React JS</div>
+                                <div class="border border-1 rounded-4 py-1 px-4">Gsap</div>
+                                <div class="border border-1 rounded-4 py-1 px-4">Web Development</div>
+                            </div>
+                            <h4>Crypto Website Development for DeFi X</h4>
+                        </div>
+                        <button class="d-none d-md-flex align-items-center border-0 rounded-circle p-3 bg-gray">
+                            <i class="fas fa-location-arrow"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5  d-flex flex-column gap-3">
+                    <img src="../assets/images/projects/project2.png" alt="js" class="w-100 h-75">
+                    <div class="col-12 d-flex justify-content-between align-items-center px-4">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex flex-wrap gap-2">
+                                <div class="border border-1 rounded-4 py-1 px-4">React JS</div>
+                                <div class="border border-1 rounded-4 py-1 px-4">Gsap</div>
+                                <div class="border border-1 rounded-4 py-1 px-4">Web Development</div>
+                            </div>
+                            <h4>Salesforce CRM - Invoice Management</h4>
+                        </div>
+                        <button class="d-none d-md-flex align-items-center border-0 rounded-circle p-3 bg-gray">
+                            <i class="fas fa-location-arrow"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5  d-flex flex-column gap-3">
+                    <img src="../assets/images/projects/project3.png" alt="js" class="w-100 h-75 h-50">
+                    <div class="col-12 d-flex justify-content-between align-items-center px-4">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex flex-wrap gap-2">
+                                <div class="border border-1 rounded-4 py-1 px-4">React JS</div>
+                                <div class="border border-1 rounded-4 py-1 px-4">Gsap</div>
+                                <div class="border border-1 rounded-4 py-1 px-4">Web Development</div>
+                            </div>
+                            <h4>Car Rental App</h4>
+                        </div>
+                        <button class="d-none d-md-flex align-items-center border-0 rounded-circle p-3 bg-gray">
+                            <i class="fas fa-location-arrow"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5  d-flex flex-column gap-3">
+                    <img src="../assets/images/projects/project4.png" alt="js" class="w-100 h-75">
+                    <div class="col-12 d-flex justify-content-between align-items-center px-4">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex flex-wrap gap-2">
+                                <div class="border border-1 rounded-4 py-1 px-4">React JS</div>
+                                <div class="border border-1 rounded-4 py-1 px-4">Gsap</div>
+                                <div class="border border-1 rounded-4 py-1 px-4">Web Development</div>
+                            </div>
+                            <h4>Financial management</h4>
+                        </div>
+                        <button class="d-none d-md-flex align-items-center border-0 rounded-circle p-3 bg-gray">
+                            <i class="fas fa-location-arrow"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="d-flex flex-column ">
+                <h4 class="line-before">Latest Blog Posts</h4>
+                <div class="d-flex flex-column-reverse flex-md-row justify-content-between gap-3">
+                    <p class="col-12 col-md-7">More than 1500+ agencies using Portfolify.</p>
+                    <div class="col-12 col-md-3 d-flex align-items-end justify-content-end">
+                        <button id="services-pricing" class="d-flex align-items-center gap-2 border-0 rounded-5">
+                            See All Blogs
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="d-flex flex-wrap gap-4 justify-content-evenly">
+                <div class="col-12 col-7 col-lg-3 d-flex flex-column gap-3">
+                    <img src="../assets/images/blogs/blog1.png" alt="js" class="w-100 h-75">
+                    <div class="col-12 d-flex justify-content-between align-items-center px-3">
+                        <div class="d-flex flex-column">
+                            <p>
+                                <span>March 18, 2024 </span>
+                                <span>/</span>
+                                <span>Articles</span>
+                            </p>
+                            <h6>7 Great Web Development Languages to Learn this Year</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-7 col-lg-3 d-flex flex-column gap-3">
+                    <img src="../assets/images/blogs/blog2.png" alt="js" class="w-100 h-75">
+                    <div class="col-12 d-flex justify-content-between align-items-center px-3">
+                        <div class="d-flex flex-column">
+                            <p>
+                                <span>March 18, 2024 </span>
+                                <span>/</span>
+                                <span>Articles</span>
+                            </p>
+                            <h6>How to Optimize your Website for Better Performance</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-7 col-lg-3 d-flex flex-column gap-3">
+                    <img src="../assets/images/blogs/blog3.png" alt="js" class="w-100 h-75 h-50">
+                    <div class="col-12 d-flex justify-content-between align-items-center px-3">
+                        <div class="d-flex flex-column">
+                            <p>
+                                <span>March 18, 2024 </span>
+                                <span>/</span>
+                                <span>Articles</span>
+                            </p>
+                            <h6>8 Tips to Improve your Web Development Skills in 2024</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="d-flex flex-column ">
+                <h4 class="line-before">Contact Details</h4>
+                <div class="d-flex justify-content-between">
+                    <p class="col-12">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text.</p>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="line-before d-flex align-items-center gap-2">
+                        <div class="d-none d-md-block">
+                            <i class="fas fa-mobile-screen"></i>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start justify-content-between">
+                            <h5>Phone</h5>
+                            <p>+201289223643</p>
+                        </div>
+                    </div>
+                    <div class="line-before d-flex align-items-center gap-2">
+                        <div class="d-none d-md-block">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start justify-content-between">
+                            <h5>Location</h5>
+                            <p>91 Ahmed-Shawqi st, Alexandria, Egypt</p>
+                        </div>
+                    </div>
+                    <div class="line-before d-flex align-items-center gap-2">
+                        <div class="d-none d-md-block">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start justify-content-between">
+                            <h5>Email</h5>
+                            <p>muhammedgamal997@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2190.656000705315!2d29.941844473409347!3d31.22318789857415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c4ebe4954a4f%3A0xc43ce77289f216a9!2sMoustafa%20Kamel%20Tram%20Station!5e0!3m2!1sen!2seg!4v1731527572331!5m2!1sen!2seg"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            <section class="d-flex flex-column ">
+                <h4 class="line-before">Get In Touch</h4>
+                <div class="d-flex justify-content-between">
+                    <p class="col-12">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything
+                        embarrassing hidden in the middle of text.</p>
+                </div>
+                <form class="d-flex flex-column gap-3 border border-1 rounded-3 p-3">
+                    <div class="col-12 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                        <div class="col-12 col-md-6 d-flex flex-grow-1">
+                            <div class="d-flex flex-grow-1 align-items-center gap-2 border border-1 rounded-3 px-3">
+                                <div>
+                                    <i class="fas fa-envelope"></i>
+                                </div> <input type="text" name="name" id="name" placeholder="Your Name"
+                                    class="flex-grow-1 w-100 border-0 outline-0 py-3">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex flex-grow-1">
+                            <div class="d-flex flex-grow-1 align-items-center gap-2 border border-1 rounded-3 px-3">
+                                <div>
+                                    <i class="fas fa-envelope"></i>
+                                </div> <input type="text" name="email" id="email" placeholder="Email Address"
+                                    class="flex-grow-1 w-100 border-0 outline-0 py-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                        <div class="col-12 col-md-6 d-flex flex-grow-1">
+                            <div class="d-flex flex-grow-1 align-items-center gap-2 border border-1 rounded-3 px-3">
+                                <div>
+                                    <i class="fas fa-envelope"></i>
+                                </div> <input type="text" name="phone" id="phone" placeholder="Phone Number"
+                                    class="flex-grow-1 w-100 border-0 outline-0 py-3">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex flex-grow-1">
+                            <div class="d-flex flex-grow-1 align-items-center gap-2 border border-1 rounded-3 px-3">
+                                <div>
+                                    <i class="fas fa-envelope"></i>
+                                </div> <input type="text" name="location" id="location" placeholder="Your Location"
+                                    class="flex-grow-1 w-100 border-0 outline-0 py-3">
+                            </div>
+                        </div>
+                    </div>
+                    <textarea name="message" placeholder="Your Message..."
+                        class="flex-grow-1 w-100 border border-1 rounded-3 px-3 outline-0 py-3"></textarea>
+                    <div>
+                        <button id="services-pricing" class="d-flex align-items-center gap-2 border-0 rounded-5">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <footer class="d-flex justify-content-between align-items-center py-3 bg-light">
+                <p class="mb-0">&copy; 2024
+                    <a href="https://www.linkedin.com/in/mogamaal/" target="_blank"
+                        class="fst-italic text-decoration-none fw-bold">
+                        <span class="special">DevJimmy</span>
+                    </a>. All rights reserved.
+                </p>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>

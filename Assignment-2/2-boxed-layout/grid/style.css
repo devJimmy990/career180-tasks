@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 2fr 1fr 5%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "nav nav nav"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    border: 4px solid black;
+    background-color: #99d9ea;
+}
+
+footer {
+    grid-area: footer;
+    border: 4px solid black;
+    background-color: #ffaec9;
+}
+
+main {
+    grid-area: main;
+    border: 4px solid black;
+}
+
+aside {
+    grid-area: aside;
+    border: 4px solid black;
+    background-color: #b97a57;
+}
+button{
+    display: block;
+}
